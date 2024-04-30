@@ -21,6 +21,7 @@
 .secondheader{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* Header.js */
