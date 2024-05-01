@@ -5,7 +5,8 @@ import krmap from './img/krmap.png';
 import './style.css'
 
 const regionInfo = {
-    seoul: "testtesttesttesttesttesttesttesttesttesttesttest"
+    seoul: "testtesttesttesttesttesttesttesttesttesttesttest",
+    jeju: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 };
 
 function Header(){
