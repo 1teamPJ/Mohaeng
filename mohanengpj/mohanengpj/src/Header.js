@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import logo from './img/nologo.png';
 import krmap from './img/krmap.png';
+import noneimg1 from './img/noneimg1.png';
+import noneimg2 from './img/noneimg2.png';
+import noneimg3 from './img/noneimg3.png';
 import './style.css'
 
 const regionInfo = {
