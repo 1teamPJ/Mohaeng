@@ -45,11 +45,12 @@ function Header(){
         if (regionName === 'none') {
             setInfoComponent(null);
         }else{
-            setTranslatedRegionName(translatedRegionNames[regionName]);
+            const newTranslatedRegionName = translatedRegionNames[regionName];
+            setTranslatedRegionName(newTranslatedRegionName);
             setInfoComponent(
                 <div class="backBoard">
                 <div class="region">
-                    <h2>{translatedRegionName}</h2>
+                    <h2>{newTranslatedRegionName}</h2>
                         
                 </div>
                 <div class="boardList">
