@@ -94,6 +94,7 @@ function Header(){
         }
     };
 
+
     //목록에 쓸 예제 만듬
     // const [travelList, setTravelList] = useState([]);
 
@@ -163,6 +164,24 @@ function Header(){
                 <area onClick={() => handleClick('gyeongnam')} alt="전라남도" title="전라남도" href="#" coords="173,295,142,336,139,393,231,391,272,358,272,319,261,299,224,325,196,330" shape="poly"/>
                 <area onClick={() => handleClick('jeju')} alt="제주도" title="제주도" href="#" coords="188,417,136,423,122,446,134,454,171,453,190,440" shape="poly"/>
             </map>
+
+            <div class="recommendTrip">
+                <h1 class="">이런 여행은 어떠세요?</h1>
+                <div class="rcimg">
+                    <img src={noneimg1}></img>
+                    <img src={noneimg2}></img>
+                    <img src={noneimg3}></img>
+                    <img src={noneimg1}></img>
+                    <img src={noneimg2}></img>
+                    <img src={noneimg3}></img>
+                    <img src={noneimg1}></img>
+                    <img src={noneimg2}></img>
+                    <img src={noneimg3}></img>
+                    <img src={noneimg3}></img>
+                    <img src={noneimg3}></img>
+                    <img src={noneimg3}></img>
+                </div>
+            </div>
         </>
     );
 }
