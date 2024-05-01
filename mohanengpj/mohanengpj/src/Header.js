@@ -31,7 +31,7 @@ const translatedRegionNames = {
 function Header(){
 
     const [selectedRegion, setSelectedRegion] = useState('');
-    const [info, setInfo] = useState('');
+    const [infoComponent, setInfoComponent] = useState(null);
     const [regionName, setRegionName] = useState('');
     const [translatedRegionName, setTranslatedRegionName] = useState('');
 
@@ -39,8 +39,19 @@ function Header(){
         console.log(regionName + ' 클릭됨');
         setRegionName(regionName);
         setSelectedRegion(regionName);
-        setInfo(regionInfo[regionName]);
         setTranslatedRegionName(translatedRegionNames[regionName]);
+        setInfoComponent(
+                <div class="backBoard">
+                    <div class="region">
+                        <h2>{translatedRegionNames[regionName]}</h2>
+                    </div>
+                    <div class="boardList">
+                        <ul class="no-bullet">
+                            {}
+                        </ul>
+                    </div>
+                </div>
+        );
     };
 
 
@@ -75,7 +86,7 @@ function Header(){
         </div>
             <div class="koreamap">
                 <img src={krmap} usemap="#image-map"/>
-                <div class="triplist">{info}</div>
+                {infoComponent}
                 
             </div>
 
@@ -98,7 +109,7 @@ function Header(){
                 <area onClick={() => handleClick('jeju')} alt="제주도" title="제주도" href="#" coords="188,417,136,423,122,446,134,454,171,453,190,440" shape="poly"/>
             </map>
 
-            <div class="backBoard">
+            {/* <div class="backBoard">
                 <div class="region">
                     <h2>{translatedRegionName}</h2>
                         
@@ -108,7 +119,7 @@ function Header(){
                         
                     </ul>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }
