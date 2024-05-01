@@ -43,7 +43,22 @@ function Header(){
         setTranslatedRegionName(translatedRegionNames[regionName]);
     };
 
+    //목록에 쓸 예제 만듬
+    // const [travelList, setTravelList] = useState([]);
 
+    // const addList = () => {
+    //     const nextIndex = 0;
+
+    //     const seoulList ={
+    //         no : nextIndex,
+    //         image : "nologo.png",
+    //         title : 'hello'
+    //     };
+
+    //     setTravelList(prevList => [...prevList, seoulList]);
+    //     nextIndex +=1;
+    // }
+    // 여기 까지 예시
     return(
         <>
         <div class="header">
@@ -105,7 +120,38 @@ function Header(){
                 </div>
                 <div class="boardList">
                     <ul class="no-bullet">
-                        
+                        <li>
+                            <div class="imgLeft">
+                                <img src={logo} alt="logo"></img>
+                            </div>
+                            <div class="textRight">
+                                <span>제목이 입력되는 부분</span>
+                                <br/>
+                                <span>요약이 입력되는 부분</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="imgLeft">
+                                <img src={logo}></img>
+                            </div>
+                            <div class="textRight">
+                                <span>제목이 입력되는 부분</span>
+                                <br/>
+                                <span>요약이 입력되는 부분</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="imgLeft">
+                                <img src={logo}></img>
+                            </div>
+                            <div class="textRight">
+                                <span>제목이 입력되는 부분</span>
+                                <br/>
+                                <span>요약이 입력되는 부분</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
