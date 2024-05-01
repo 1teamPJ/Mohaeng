@@ -75,10 +75,11 @@
 .backBoard{
     width: 500px;
     height: 500px;
-    background-color:skyblue;
+    background-color:rgb(187, 140, 185);
     display: flex;
     overflow-y: auto;
-    max-height: 300px;
+    max-height: 500px;
+    flex-direction: column;
 }
 
 .no-bullet{
@@ -91,4 +92,10 @@
 
 .textRight{
     display: inline-block;
+}
+
+.region{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
