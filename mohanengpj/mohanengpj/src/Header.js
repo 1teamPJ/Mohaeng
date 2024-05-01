@@ -39,19 +39,23 @@ function Header(){
         console.log(regionName + ' 클릭됨');
         setRegionName(regionName);
         setSelectedRegion(regionName);
-        setTranslatedRegionName(translatedRegionNames[regionName]);
-        setInfoComponent(
-                <div class="backBoard">
-                    <div class="region">
-                        <h2>{translatedRegionNames[regionName]}</h2>
+        if (regionName === 'none') {
+            setInfoComponent(null);
+        }else{
+            setTranslatedRegionName(translatedRegionNames[regionName]);
+            setInfoComponent(
+                    <div class="backBoard">
+                        <div class="region">
+                            <h2>{translatedRegionNames[regionName]}</h2>
+                        </div>
+                        <div class="boardList">
+                            <ul class="no-bullet">
+                                {}
+                            </ul>
+                        </div>
                     </div>
-                    <div class="boardList">
-                        <ul class="no-bullet">
-                            {}
-                        </ul>
-                    </div>
-                </div>
-        );
+            );
+        }
     };
 
 
