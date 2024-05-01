@@ -70,4 +70,10 @@
     padding: 100px 0;
 }
 
+
 /* Header style 종료 */
+.backBoard{
+    width: 500px;
+    height: 500px;
+    background-color:skyblue;
+}

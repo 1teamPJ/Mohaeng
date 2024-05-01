@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import logo from './img/nologo.png';
 import krmap from './img/krmap.png';
-// import svgmap from './img/krmap.svg';
 import './style.css'
 
 const regionInfo = {
@@ -9,16 +8,41 @@ const regionInfo = {
     jeju: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 };
 
+const translatedRegionNames = {
+    seoul: "서울",
+    incheon: "인천",
+    daejeon: "대전",
+    daegu: "대구",
+    ulsan: "울산",
+    busan: "부산",
+    gwangju: "광주",
+    gyeonggi: "경기도",
+    gangwon: "강원도",
+    chungbuk: "충청북도",
+    chungnam: "충청남도",
+    jeonbuk: "전라북도",
+    jeonnam: "전라남도",
+    gyeongbuk: "경상북도",
+    gyeongnam: "경상남도",
+    jeju: "제주도"
+};
+
+
 function Header(){
 
     const [selectedRegion, setSelectedRegion] = useState('');
     const [info, setInfo] = useState('');
+    const [regionName, setRegionName] = useState('');
+    const [translatedRegionName, setTranslatedRegionName] = useState('');
 
     const handleClick = (regionName) => {
         console.log(regionName + ' 클릭됨');
+        setRegionName(regionName);
         setSelectedRegion(regionName);
         setInfo(regionInfo[regionName]);
+        setTranslatedRegionName(translatedRegionNames[regionName]);
     };
+
 
     return(
         <>
@@ -31,7 +55,7 @@ function Header(){
             <h1 class="locate">지역</h1>
             <select name='region' class="lc" value={selectedRegion} onChange={e => handleClick(e.target.value)}>
                 <option value='none' className="textc" selected>--선택 안함--</option>
-                <option value='seoul'>서울</option>
+                <option value='seoul' alt="서울">서울</option>
                 <option value='incheon'>인천</option>
                 <option value='daejeon'>대전</option>
                 <option value='daegu'>대구</option>
@@ -49,7 +73,6 @@ function Header(){
                 <option value='jeju'>제주도</option>
             </select>
         </div>
-            {/* <img src={svgmap}/> */}
             <div class="koreamap">
                 <img src={krmap} usemap="#image-map"/>
                 <div class="triplist">{info}</div>
@@ -74,8 +97,21 @@ function Header(){
                 <area onClick={() => handleClick('gyeongnam')} alt="전라남도" title="전라남도" href="#" coords="173,295,142,336,139,393,231,391,272,358,272,319,261,299,224,325,196,330" shape="poly"/>
                 <area onClick={() => handleClick('jeju')} alt="제주도" title="제주도" href="#" coords="188,417,136,423,122,446,134,454,171,453,190,440" shape="poly"/>
             </map>
+
+            <div class="backBoard">
+                <div class="region">
+                    <h2>{translatedRegionName}</h2>
+                        
+                </div>
+                <div class="boardList">
+                    <ul class="no-bullet">
+                        
+                    </ul>
+                </div>
+            </div>
         </>
     );
 }
+
 
 export default Header;
