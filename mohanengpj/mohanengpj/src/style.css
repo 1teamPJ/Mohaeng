@@ -76,4 +76,19 @@
     width: 500px;
     height: 500px;
     background-color:skyblue;
+    display: flex;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.no-bullet{
+    list-style-type: none;
+}
+
+.imgLeft{
+    display: inline-block;
+}
+
+.textRight{
+    display: inline-block;
 }
