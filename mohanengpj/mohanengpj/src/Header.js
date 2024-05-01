@@ -44,16 +44,48 @@ function Header(){
         }else{
             setTranslatedRegionName(translatedRegionNames[regionName]);
             setInfoComponent(
-                    <div class="backBoard">
-                        <div class="region">
-                            <h2>{translatedRegionNames[regionName]}</h2>
-                        </div>
-                        <div class="boardList">
-                            <ul class="no-bullet">
-                                {}
-                            </ul>
-                        </div>
-                    </div>
+                <div class="backBoard">
+                <div class="region">
+                    <h2>{translatedRegionName}</h2>
+                        
+                </div>
+                <div class="boardList">
+                    <ul class="no-bullet">
+                        <li>
+                            <div class="imgLeft">
+                                <img src={logo} alt="logo"></img>
+                            </div>
+                            <div class="textRight">
+                                <span>제목이 입력되는 부분</span>
+                                <br/>
+                                <span>요약이 입력되는 부분</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="imgLeft">
+                                <img src={logo}></img>
+                            </div>
+                            <div class="textRight">
+                                <span>제목이 입력되는 부분</span>
+                                <br/>
+                                <span>요약이 입력되는 부분</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="imgLeft">
+                                <img src={logo}></img>
+                            </div>
+                            <div class="textRight">
+                                <span>제목이 입력되는 부분</span>
+                                <br/>
+                                <span>요약이 입력되는 부분</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             );
         }
     };
@@ -127,49 +159,6 @@ function Header(){
                 <area onClick={() => handleClick('gyeongnam')} alt="전라남도" title="전라남도" href="#" coords="173,295,142,336,139,393,231,391,272,358,272,319,261,299,224,325,196,330" shape="poly"/>
                 <area onClick={() => handleClick('jeju')} alt="제주도" title="제주도" href="#" coords="188,417,136,423,122,446,134,454,171,453,190,440" shape="poly"/>
             </map>
-
-            {/* <div class="backBoard">
-                <div class="region">
-                    <h2>{translatedRegionName}</h2>
-                        
-                </div>
-                <div class="boardList">
-                    <ul class="no-bullet">
-                        <li>
-                            <div class="imgLeft">
-                                <img src={logo} alt="logo"></img>
-                            </div>
-                            <div class="textRight">
-                                <span>제목이 입력되는 부분</span>
-                                <br/>
-                                <span>요약이 입력되는 부분</span>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="imgLeft">
-                                <img src={logo}></img>
-                            </div>
-                            <div class="textRight">
-                                <span>제목이 입력되는 부분</span>
-                                <br/>
-                                <span>요약이 입력되는 부분</span>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="imgLeft">
-                                <img src={logo}></img>
-                            </div>
-                            <div class="textRight">
-                                <span>제목이 입력되는 부분</span>
-                                <br/>
-                                <span>요약이 입력되는 부분</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div> */}
         </>
     );
 }
