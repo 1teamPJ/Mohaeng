@@ -114,6 +114,9 @@ function Header(){
             <img src={logo} alt="로고 없음" height="100"/>
             <a href="https://www.instagram.com/" class="headerword">인스타그램</a>
             <a href="https://www.kakaocorp.com/" class="headerword">카카오톡</a>
+            <div class="weather">
+                <h3>여기에 날씨가 들어갈겁니다.</h3>
+            </div>
         </div>
         <div class="secondheader">
             <h1 class="locate">지역</h1>
