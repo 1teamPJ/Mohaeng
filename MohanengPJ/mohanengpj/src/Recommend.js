@@ -2,6 +2,7 @@ import './recommend.css'
 import noneimg1 from './img/noneimg1.png';
 import noneimg2 from './img/noneimg2.png';
 import noneimg3 from './img/noneimg3.png';
+import { NavLink } from 'react-router-dom';
 
 const triprm = [
     {
@@ -37,7 +38,7 @@ function Recommend({ user }){
                     <img src={noneimg3}></img>
                     <img src={noneimg3}></img>
                     <img src={noneimg3}></img> */}
-                    <button>버튼</button>
+                    <button><NavLink to="/testpage" className="noneunderline">버튼</NavLink></button>
                 </div>
             </div>
         </>

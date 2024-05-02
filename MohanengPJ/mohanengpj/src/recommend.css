@@ -20,3 +20,8 @@
     white-space: nowrap;
     box-sizing: border-box;
 }
+
+.noneunderline{
+    text-decoration: none;
+    color: red;
+}
