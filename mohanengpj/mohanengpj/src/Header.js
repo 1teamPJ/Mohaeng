@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './img/nologo.png';
 import krmap from './img/krmap.png';
 import './style.css'
+import axios from 'axios';
 
 const regionInfo = {
     seoul: "testtesttesttesttesttesttesttesttesttesttesttest",
@@ -27,6 +28,25 @@ const translatedRegionNames = {
     jeju: "제주도"
 };
 
+const regionCoordinates = {
+    seoul: { lat: 37.5665, lon: 126.9780 },
+    incheon: { lat: 37.4563, lon: 126.7052 },
+    daejeon: { lat: 36.3504, lon: 127.3845 },
+    daegu: { lat: 35.8714, lon: 128.6014 },
+    ulsan: { lat: 35.5384, lon: 129.3114 },
+    busan: { lat: 35.1796, lon: 129.0756 },
+    gwangju: { lat: 35.1595, lon: 126.8526 },
+    gyeonggi: { lat: 37.4138, lon: 127.5183 },   
+    gangwon: { lat: 37.8228, lon: 128.1555 }, 
+    chungbuk: { lat: 36.6359, lon: 127.4913 },
+    chungnam: { lat: 36.5184, lon: 126.8000 }, 
+    jeonbuk: { lat: 35.7175, lon: 127.1530 }, 
+    jeonnam: { lat: 34.8679, lon: 126.9910 }, 
+    gyeongbuk: { lat: 36.4919, lon: 128.8889 }, 
+    gyeongnam: { lat: 35.4606, lon: 128.2132 }, 
+    jeju: { lat: 33.4890, lon: 126.4983 }
+};
+
 
 function Header(){
 
@@ -34,6 +54,39 @@ function Header(){
     const [infoComponent, setInfoComponent] = useState(null);
     const [regionName, setRegionName] = useState('');
     const [translatedRegionName, setTranslatedRegionName] = useState('');
+
+    const [location, setLocation] = useState({
+        loaded: false,
+        coordinates: { lat: "", lon: "" },
+      });
+      const [weather, setWeather] = useState(null);
+
+      const onSuccess = location => {
+        setLocation({
+          loaded: true,
+          coordinates: {
+            lat: location.coords.latitude,
+            lon: location.coords.longitude,
+          },
+        });
+      };
+
+      useEffect(() => {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(onSuccess);
+        }
+      }, []);
+
+      useEffect(() => {
+        if (location.loaded) {
+          axios
+            .get(`https://api.openweathermap.org/data/2.5/weather?lat=${location.coordinates.lat}&lon=${location.coordinates.lon}&appid=bdde3f61441a8ac05c85c4d21c0e8743&lang=kr`)
+            .then(response => {
+              setWeather(response.data);
+            });
+        }
+    }, [location]);
+    
 
     const handleClick = (regionName) => {
         console.log(regionName + ' 클릭됨');
@@ -44,6 +97,14 @@ function Header(){
         }else{
             const newTranslatedRegionName = translatedRegionNames[regionName];
             setTranslatedRegionName(newTranslatedRegionName);
+            const coords = regionCoordinates[regionName];
+            const seoulLocation = {
+                coords: {
+                    latitude: coords.lat,
+                    longitude: coords.lon,
+                },
+            };
+            onSuccess(seoulLocation);
             setInfoComponent(
                 <div class="backBoard">
                 <div class="region">
@@ -115,7 +176,18 @@ function Header(){
             <a href="https://www.instagram.com/" class="headerword">인스타그램</a>
             <a href="https://www.kakaocorp.com/" class="headerword">카카오톡</a>
             <div class="weather">
-                <h3>여기에 날씨가 들어갈겁니다.</h3>
+                {location.loaded ? (
+                    <>
+                        <h3 className='weatherinfo'>{weather ? `${weather.name}의 날씨 정보` : "날씨 정보를 불러오는 중..."}</h3>
+                        {weather && (
+                            <div>
+                                <p>지역: {weather.name} / 날씨: {weather.weather[0].description} / 온도: {(weather.main.temp - 273.15).toFixed(2)}°C</p>
+                            </div>
+                        )}
+                    </>
+                ) : (
+                    <h3>위치 정보를 불러오는 중...</h3>
+                )}
             </div>
         </div>
         <div class="secondheader">
