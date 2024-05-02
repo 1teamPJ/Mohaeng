@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import logo from './img/nologo.png';
 import krmap from './img/krmap.png';
-import noneimg1 from './img/noneimg1.png';
-import noneimg2 from './img/noneimg2.png';
-import noneimg3 from './img/noneimg3.png';
 import './style.css'
 
 const regionInfo = {
@@ -165,23 +162,6 @@ function Header(){
                 <area onClick={() => handleClick('jeju')} alt="제주도" title="제주도" href="#" coords="188,417,136,423,122,446,134,454,171,453,190,440" shape="poly"/>
             </map>
 
-            <div class="recommendTrip">
-                <h1 class="">이런 여행은 어떠세요?</h1>
-                <div class="rcimg">
-                    <img src={noneimg1}></img>
-                    <img src={noneimg2}></img>
-                    <img src={noneimg3}></img>
-                    <img src={noneimg1}></img>
-                    <img src={noneimg2}></img>
-                    <img src={noneimg3}></img>
-                    <img src={noneimg1}></img>
-                    <img src={noneimg2}></img>
-                    <img src={noneimg3}></img>
-                    <img src={noneimg3}></img>
-                    <img src={noneimg3}></img>
-                    <img src={noneimg3}></img>
-                </div>
-            </div>
         </>
     );
 }
