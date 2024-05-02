@@ -1,11 +1,15 @@
-import Header from './Header';
+//App.js 
+
+import FeedBoard from './FeedBoard';
+import './style.css'
 
 function App() {
   return (
-    <>
-      <Header/>
-    
-    </>
+ <>
+<FeedBoard/>
+ </>
+
+
   );
 }
 
