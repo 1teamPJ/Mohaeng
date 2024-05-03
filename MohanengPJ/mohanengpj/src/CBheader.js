@@ -4,7 +4,7 @@ function CBheader() {
 
     return(
         <div div class ="CBheader">
-        <h1> 이번 당신의 여행은  Check List</h1>
+        <h1> 이번 여행 당신의 취향은?</h1>
         </div>
     );
 }

@@ -154,7 +154,7 @@ function CBlist() {
             <div>     
                 {/* 여행 테마? */}
                 <div>
-                <h2> 1.너의 여행 테마는?</h2>
+                <h2> 1.당신이 선호하는 여행 테마는 무엇입니까?</h2>
                 </div>
                 <ul>
                     {themes.map((theme) => (
@@ -175,7 +175,7 @@ function CBlist() {
                 
                     {/* 여행 누구랑 */}
                 <div>
-                <h2>2.with whom?</h2>
+                <h2>2.당신과 제일 여행가고 싶은 사람은 누구입니까 ?</h2>
                 </div>
                 <ul>
                     {Partners.map(Partner => (
@@ -194,7 +194,7 @@ function CBlist() {
 
                 {/* 여행 스타일 */}
                 <div>
-                <h2>3.여행 스타일?</h2>
+                <h2>3.당신의 여행 스타일은?</h2>
                 </div>
                 <ul>
                     {TripStyles.map(TripStyles => (
@@ -213,7 +213,7 @@ function CBlist() {
 
                 {/* 여행 기간 */}
                 <div>
-                <h2>4. 여행 기간 </h2>
+                <h2>4. 당신이 선호하는 여행 기간은? </h2>
                 </div>
                 <ul>
                     {Duration.map(Duration => (
@@ -232,7 +232,7 @@ function CBlist() {
 
                 {/* 여행 준비물 */}
                 <div>
-                <h2>5.여행 준비물! </h2>
+                <h2>5.여행 갈 때 꼭 챙겨가야 하는 아이템은?! </h2>
                 </div>
                 <ul>
                     {TripItem.map(TripItem => (
