@@ -1,7 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 import Header from './pages/Header';
 import Layout from './layouts/Layout';
-import CheckBoard from './pages/CheckBoard';
+
+import CbLayout from './layouts/CbLayout';
+
+
 
 // import TravelRecommendations from './pages/TravelRecommendations';
 import TravelRecommendations from './pages/TravelRecommandations';
@@ -14,6 +17,7 @@ import './css/feedstyle.css';
 
 
 
+
 function App() {
   return (
     <>
@@ -22,11 +26,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={ <Header /> } />
-          <Route path="checkboard" element={<CheckBoard/>}/>
+
+          <Route path="checkboard" element={<CbLayout/>}/>
+
 
           <Route path="travelboard" element={<TravelRecommendations/>}/>
 
           <Route path="feedboard" element={<FeedBoard/>}/>
+
 
         </Route>
       </Routes>

@@ -1,0 +1,21 @@
+
+
+ .CBheader{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+
+}
+
+/* .CBlist{
+
+} */
+
+.cbfooter{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 60px;
+    
+}
