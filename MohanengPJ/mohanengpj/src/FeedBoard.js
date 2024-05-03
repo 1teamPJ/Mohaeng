@@ -1,30 +1,29 @@
-
-
 import React, { useState } from 'react';
-function FeedBoard(){
+
+function FeedBoard() {
     const [posts, setPosts] = useState([]);
     const [newTitle, setNewTitle] = useState('');
     const [newContent, setNewContent] = useState('');
-    const [newImage, setNewImage] = useState(null);
-    const [imagePreview, setImagePreview] = useState(''); // 추가된 부분
+    const [newImages, setNewImages] = useState([]);
+    const [imagePreviews, setImagePreviews] = useState([]);
 
     const handleAddPost = () => {
         if (newTitle.trim() !== '' && newContent.trim() !== '') {
-            if (newImage) {
+            if (newImages.length > 0) {
                 const newPost = {
                     id: posts.length + 1,
                     title: newTitle,
                     content: newContent,
-                    image: newImage // 사용자가 선택한 이미지 경로
+                    images: newImages
                 };
                 setPosts([...posts, newPost]);
+                setNewImages([]);
+                setImagePreviews([]);
             } else {
-                alert('이미지를 선택해주세요.'); // 이미지가 선택되지 않은 경우 알림
+                alert('이미지를 선택해주세요.');
             }
             setNewTitle('');
             setNewContent('');
-            setNewImage(null);
-            setImagePreview('');
         } else {
             alert('제목과 내용을 입력해주세요.');
         }
@@ -36,14 +35,15 @@ function FeedBoard(){
     };
 
     const handleFileInputChange = (e) => {
-        const file = e.target.files[0];
-        setNewImage(URL.createObjectURL(file));
-        setImagePreview(file.name); // 이미지 선택 시 파일 이름 표시
+        const files = e.target.files;
+        const newImagesArray = Array.from(files).map(file => URL.createObjectURL(file));
+        setNewImages(prevImages => [...prevImages, ...newImagesArray]);
+        setImagePreviews(prevPreviews => [...prevPreviews, ...Array.from(files).map(file => file.name)]);
     };
 
     return (
         <div className="container">
-            <h1>여행 추천</h1>
+            <h1>여행 기록</h1>
             
             <div className="input-container">
                 <label className="file-input-label">
@@ -52,10 +52,13 @@ function FeedBoard(){
                         type="file" 
                         className="file-input" 
                         onChange={handleFileInputChange} 
+                        multiple  // 여러 파일 선택 가능하도록 수정
                     />
                 </label>
                 {/* 이미지 선택 시 파일 이름 표시 */}
-                {imagePreview && <p>선택된 이미지: {imagePreview}</p>}
+                {imagePreviews && imagePreviews.map((preview, index) => (
+                    <p key={index}>선택된 이미지: {preview}</p>
+                ))}
             </div>
             <input 
                 type="text" 
@@ -77,7 +80,9 @@ function FeedBoard(){
                 {posts.map(post => (
                     <li key={post.id}>
                         <h2>{post.title}</h2>
-                        <img src={post.image} alt={post.title} />
+                        {post.images.map((image, index) => (
+                            <img key={index} src={image} alt={post.title} />
+                        ))}
                         <p>{post.content}</p>
                         <div className="btn-container">
                             <button className="btn btn-danger" onClick={() => handleDeletePost(post.id)}>삭제</button>
