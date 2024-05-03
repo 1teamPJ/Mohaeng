@@ -44,7 +44,6 @@ function FeedBoard() {
     return (
         <div className="container">
             <h1>여행 기록</h1>
-            
             <div className="input-container">
                 <label className="file-input-label">
                     이미지 선택
@@ -90,6 +89,7 @@ function FeedBoard() {
                     </li>
                 ))}
             </ul>
+            <button className="todolist" onClick={handleAddPost}>todolist</button>
         </div>
     );
 }

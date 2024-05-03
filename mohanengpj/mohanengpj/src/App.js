@@ -3,7 +3,7 @@
 import FeedBoard from './FeedBoard';
 import Header from './Header';
 import Footer from './Footer';
-import './style.css'
+import './css/feedstyle.css'
 
 function App() {
   return (
