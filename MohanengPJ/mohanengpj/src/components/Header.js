@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import logo from './img/nologo.png';
-import krmap from './img/krmap.png';
+import logo from '../img/nologo.png';
+import krmap from '../img/krmap.png';
 import './style.css'
 import axios from 'axios';
 
@@ -172,9 +172,10 @@ function Header(){
     return(
         <>
         <div class="header">
-            <img src={logo} alt="로고 없음" height="100"/>
+            {/* 프론트로 보낼려고 잠시 주석처리  */}
+            {/* <img src={logo} alt="로고 없음" height="100"/>
             <a href="https://www.instagram.com/" class="headerword">인스타그램</a>
-            <a href="https://www.kakaocorp.com/" class="headerword">카카오톡</a>
+            <a href="https://www.kakaocorp.com/" class="headerword">카카오톡</a> */}
             <div class="weather">
                 {location.loaded ? (
                     <>
