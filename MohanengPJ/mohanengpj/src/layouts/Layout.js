@@ -1,5 +1,5 @@
 import Recommend from "../Recommend";
-import Header from "../components/Header"
+import Header from "../pages/Header"
 import Front from "../components/Front"
 
 
