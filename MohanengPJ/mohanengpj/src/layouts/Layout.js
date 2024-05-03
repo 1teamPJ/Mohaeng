@@ -1,14 +1,13 @@
-import Recommend from "../Recommend";
-import Header from "../pages/Header"
-import Front from "../components/Front"
 
+import Front from "../components/Front"
+import { Outlet } from 'react-router-dom';
 
 function Layout(){
     return (
         <>  
             <Front/>
-            <Header />
-            <Recommend />
+
+            <Outlet/>
             
         </>
     )
