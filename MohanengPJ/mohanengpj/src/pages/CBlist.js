@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CBfooter from './CBfooter';
 
+
 function CBlist() {
     //여행 테마
     const [themes, setThemes] = useState([
@@ -175,7 +176,7 @@ function CBlist() {
                 
                     {/* 여행 누구랑 */}
                 <div>
-                <h2>2.당신과 제일 여행가고 싶은 사람은 누구입니까 ?</h2>
+                <h2>2. 이번 여행, 당신은 누구랑 함꼐하고 싶으세요?</h2>
                 </div>
                 <ul>
                     {Partners.map(Partner => (
