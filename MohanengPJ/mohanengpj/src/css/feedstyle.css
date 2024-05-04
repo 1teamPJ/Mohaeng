@@ -44,7 +44,7 @@
   input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #FFFB96;
+    background-color: rgb(245, 253, 179);
     color: #020202;
     border: none;
     border-radius: 5px;
@@ -114,12 +114,11 @@
   
 
 /* Header.css */
-  .title{
+  /* .title{
     background-color: mediumspringgreen;
-  }
+  } */
 
 
   /* Footer.css */
-  .footer {
-    background-color: mediumspringgreen;
-  }
+  
+   

@@ -8,7 +8,6 @@ function CbLayout(){
         <>  
             <CBheader/>
             <CBlist/>
-
             <Outlet/>
             
         </>
