@@ -1,6 +1,6 @@
 <div align = center> <img src ="https://github.com/1teamPJ/Mohaeng/assets/129252557/e499cd58-9bb7-4fec-bd9a-5207db5d02d5"><h1>Mohaeng</h1> </div>
 
-## 프로젝트 주제 : 여행 게시판 
+## 프로젝트 주제 여행 게시판 
 
 ## 1. 프로그램 기획
 
@@ -71,146 +71,45 @@
     <img src="https://github.com/DBTeamP/Find-Dog/assets/135615995/5e61746a-f6f2-4912-a31e-ca8b9755d8fe" alt="사진" width="30" height="30"> Google Meet
 </div>
 
- 
-
- 
-##   개발 방향
-- 유기견 관련 활동들을 관리하는 프로그램인 "FindDog"은 유기견 보호 및 입양을 장려하고,
--  이에 대한 인식을 높이며, 유기견에 대한 관심을 유도하는 것을 목표로 합니다. 이를 위해 다음과 같은 개발 방향을 설정했습니다.
-### 1.유기견에 대한 인식 개선 및 관심 유도:
--  "FindDog"은 유기견 보호 및 입양 구조를 장려하고, 이에 대한 사회적 인식을 높이는 것을 목표로 함
-### 2.정보의 접근성 향상
--  유기견에 관한 다양한 정보(찾기,구조 , 입양, 봉사활동 등)를 쉽게 찾고 접근할 수 있도록 했습니다.
-### 3.커뮤니티 기능 강화
-- 사용자 간의 소통을 장려하기 위한 커뮤니티 기능(게시판, 댓글 , 지역정보 등)을 강화합니다. 
-
-
-
-
 ## 브랜치전략
 - 각자 맡은 기능에따라 브랜치를 생성하여
 - 브랜치명은 feature/기능/(자기 깃허브 닉네임)
 - feature/ : 기능단위로 독립적인 개발환경을 위해 사용.
 
+## 3. 시장 조사
 
 
-## 3. 프로젝트 구조
+### 글로벌 여행 앱 시장 동향:
+- 증가하는 여행 수요: 코로나19 팬데믹 이후 여행 제한이 완화됨에 따라 전 세계적으로 여행 수요가 증가하고 있습니다. 이는 여행 관련 앱과 서비스에 대한 수요 증가로 이어집니다.
+- 개인화 서비스의 중요성: 사용자들은 점점 더 개인화된 여행 경험을 원하고 있습니다. 이에 따라 사용자의 취향과 선호도를 분석하여 맞춤형 여행지를 추천하는 기능은 중요한 경쟁력이 됩니다.
+- 기술의 발전: AI, 빅데이터, AR 등의 기술이 발전하면서, 이를 활용한 차별화된 여행 정보 제공 및 사용자 경험 향상이 가능해졌습니다.
+### 한국 내 여행 앱 시장 동향:
+- 로컬 컨텐츠의 중요성: 한국 내 여행지에 대한 상세하고 실시간 지역 정보를 제공하는 앱이 인기를 끌고 있습니다. 로컬 정보에 대한 접근성을 높이는 것이 중요합니다.
+- 커뮤니티 기능: 여행 후기 및 실시간 피드백 공유가 활발한 커뮤니티 기능은 사용자 참여를 높이고 앱의 재방문율을 증가시킵니다.
+  
+
+## 4. 유사 프로그램 분석
+- 
+- 차별화 전략
+## 5. 프로젝트 구조
   ```
  
- main
-    ├── java
-    │   └── com
-    │       └── dbteam
-    │           ├── application
-    │           │   ├── Application.java
-    │           │   └── testRun.java
-    │           ├── common
-    │           │   ├── Template.java
-    │           │   └── dtopackage
-    │           │       ├── AdoptionDTO.java
-    │           │       ├── CountDTO.java
-    │           │       ├── DogBoardDTO.java
-    │           │       ├── DogDTO.java
-    │           │       ├── FindDogDTO.java
-    │           │       ├── RegionDTO.java
-    │           │       ├── UsersDTO.java
-    │           │       ├── VolDTO.java
-    │           │       └── VolPDTO.java
-    │           └── xml
-    │               ├── adoption
-    │               │   ├── AdoptionController.java
-    │               │   ├── AdoptionMapper.java
-    │               │   ├── AdoptionService.java
-    │               │   ├── AdoptionView.java
-    │               │   └── PrintResult.java
-    │               ├── dog
-    │               │   ├── DogController.java
-    │               │   ├── DogMapper.java
-    │               │   ├── DogService.java
-    │               │   ├── DogView.java
-    │               │   └── PrintResult.java
-    │               ├── dogboard
-    │               │   ├── DogBoardController.java
-    │               │   ├── DogBoardMapper.java
-    │               │   ├── DogBoardService.java
-    │               │   ├── DogBoardView.java
-    │               │   └── PrintResult.java
-    │               ├── finddog
-    │               │   ├── FindDogController.java
-    │               │   ├── FindDogMapper.java
-    │               │   ├── FindDogService.java
-    │               │   ├── FindDogView.java
-    │               │   └── PrintResult.java
-    │               ├── login
-    │               │   ├── LogInController.java
-    │               │   ├── LogInService.java
-    │               │   ├── LoginMapper.java
-    │               │   ├── LoginView.java
-    │               │   └── PrintResult.java
-    │               ├── volunteer
-    │               │   ├── PrintResult.java
-    │               │   ├── VolController.java
-    │               │   ├── VolMapper.java
-    │               │   ├── VolService.java
-    │               │   └── VolView.java
-    │               └── volunteer_person
-    │                   ├── PrintResult.java
-    │                   ├── VolPController.java
-    │                   ├── VolPMapper.java
-    │                   ├── VolPService.java
-    │                   └── VolPView.java
-    └── resources
-        ├── com
-        │   └── dbteam
-        │       ├── test.xml
-        │       └── xml
-        │           ├── adoption
-        │           │   └── AdoptionMapper.xml
-        │           ├── dog
-        │           │   └── DogMapper.xml
-        │           ├── dogboard
-        │           │   └── DogBoardMapper.xml
-        │           ├── finddog
-        │           │   └── FindDogMapper.xml
-        │           ├── login
-        │           │   └── LoginMapper.xml
-        │           ├── volunteer
-        │           │   └── VolMapper.xml
-        │           └── volunteer_person
-        │               └── VolPMapper.xml
-        └── config
-            ├── connection-info.properties
-            └── mybatis-config.xml
+ 
  ```
 
    
-## 4. 프로그램 기능 및 동작 방식
-#### 1.회원 관리 기능
-- 회원 가입 및 정보 관리: 사용자가 회원으로 등록하고 개인 정보를 입력할 수 있습니다. 이 정보는 데이터베이스에 저장되어 관리됩니다.
-- 회원 로그인: 등록된 회원은 자신의 계정으로 로그인하여 프로그램을 사용할 수 있습니다.
-- 보호 단체 관리자, 일반 유저 로그인: 관리자는 회원 정보를 열람하고 수정할 수 있습니다. 
-- 회원 가입: 아이디, 이름 ,전화번호 ,지역번호를 받아 데이터베이스에 저장합니다
+## 6. 프로그램 기능 및 동작 방식
+#### 1.메인 게시판 기능
 
-#### 2.유기견 등록 및 관리 게시판 
-- 유기견 정보 등록: 새로운 유기견을 등록할 때 개별 정보를 입력합니다. 예를 들어, 이름, 견종, 나이, 건강 상태 등을 포함합니다.
-- 유기견 정보 열람 및 수정: 등록된 유기견 정보를 조회하고 필요할 경우 수정할 수 있습니다.
-- 유기견 검색 기능: 유기견의 특정 조건에 따라 검색할 수 있는 기능을 제공합니다.
 
-#### 3.강아지 찾기 게시판
-- 등록된 강아지 목록 전체 보기 기능과, 이름을 검색할 수 있습니다.
-- 강아지 이름과 강아지에 대한 정보를 입력할 수 있습니다.
+#### 2.여행 피드 게시판
 
-#### 4.유기견 봉사활동 관리
-- 봉사 일정 추가,삭제
-- 봉사글 봉사활동명, 날짜 ,내용 ,지역 상세 보기
-- 내가 작석한 글 보기
-- 봉사활동명으로 각 인원 수 체크하고 그에 대한 추가, 삭제
 
-#### 5.입양 일지
-- 전체 조회 : 모든 입양일지를 한눈에 확인
-- 추가 : 새로운 입양일지를 추가(일지제목, 일지내용, 유저번호)
-- 삭제 : 작성한 입양일지를 입양일지 번호를 입력해서 삭제
-- 제목으로 검색 : 입양일지 제목으로 검색해서 확인
+#### 3.여행 추천 게시판
+- 
+
+#### 4.여행 취향 체크리스트
+- 
 
 
 
@@ -218,36 +117,33 @@
 ### 역할분담
 
 #### 팀원 이재혁
-- DB테이블 작성
-- 4,5번 보호센터 봉사활동-봉사 페이지 구현
+
 
 #### 팀원 안효준
-- 유저, 관리자 추가, 회원가입, 로그인 기능
-- 미아견 추가, 검색, 잃어버린 강아지 찾기 게시판 관리
+
 
 #### 팀원 박세연
-- 유기견 게시판 관리
-- 유기견 프로필 관리
-- 강아지 찾기 추가,삭제,검색기능
+
   
 #### 팀원 박예나
-- 입양 게시판
-- 입양 일지 조회, 추가, 삭제기능 
+
 
 #### 팀장 진윤재
--  봉사활동 명 입력 및 인원수 체크+(중복 검색 기능)
--  봉사활동 추가 및 삭제
+-  여행 취향 체크리스트
+-  본인의 취향에 맞는 여행에 대한 질문들 체크
+-  질문에 대한 답변 추가,삭제 기능
+-  체크한 리스트 모으기
 
 
 ###  작업관리
 
-- GitHub issue, 학교에서 진행상황 공유
+- GitHub issue, 학교에서 대면으로 진행상황 공유
 - 격일로 여는 짧은 회의를 통해 notion 에 회의내용을 기록함.
-- notion 에 역할 분담, ERD, 물리 ERD 공유
+- notion 에 역할 분담,
 - 매일 학교에서 짧은 회의를 통해 notion 에 회의내용을 기록함.
   
 ### 개발 기간
--  개발 기간 : 2024-04-09 ~ 2024-04-15
+-  개발 기간 : 2024-04-29 ~ 2024-05-07
   
 ## 6.프로젝트 후기
 
