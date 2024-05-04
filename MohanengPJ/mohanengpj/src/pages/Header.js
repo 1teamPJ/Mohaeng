@@ -1,36 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../img/nologo.png';
 /* 리스트 셋팅 */
-// import seoulNamsan from '../img/seoulNamsan.jpg';
-// import seoulLotteTower from '../img/seoulLotteTower.jpg';
-// import seoulLotteWorld from '../img/seoulLotteWorld.jpg';
-// import busanGwanganli from '../img/busanGwanganli.jpg';
-// import BusanGwangjwang from '../img/BusanGwangjwang';
-// import BusanTheBay from '../img/BusanTheBay';
-// import jejuHanla from '../img/jejuHanla';
-// import jejuJusang from '../img/jejuJusang';
-// import JejuStone from '../img/JejuStone';
+import seoulNamsan from '../img/seoulNamsan.jpg';
+import seoulLotteTower from '../img/seoulLotteTower.jpg';
+import seoulLotteWorld from '../img/seoulLotteworld.jpg';
+import busanGwanganli from '../img/busanGwanganli.jpg';
+import BusanGwangjwang from '../img/BusanGwangjwang.jpg';
+import BusanTheBay from '../img/BusanTheBay.jpg';
+import jejuHanla from '../img/jejuHanla.jpg';
+import jejuJusang from '../img/jejuJusang.jpg';
+import JejuStone from '../img/JejuStone.jpg';
 
 import krmap from '../img/krmap.png';
 import './style.css'
 import axios from 'axios';
 
 /* 리스트 셋팅 */
-// const tourList = [
-//     {id:1, region:seoul, img: seoulNamsan , title:'야경 대박', text:'야경이 이쁜이유'},
-//     {id:2, region:seoul, img: seoulLotteTower , title:'경치 대박', text:'경치가 이쁜이유'},
-//     {id:3, region:seoul, img: seoulLotteWorld , title:'재미 대박', text:'재미진 이유'},
+const tourList = [
+    {id:1, region:'seoul', img: seoulNamsan , title:'야경 대박', text:'야경이 이쁜이유'},
+    {id:2, region:'seoul', img: seoulLotteTower , title:'경치 대박', text:'경치가 이쁜이유'},
+    {id:3, region:'seoul', img: seoulLotteWorld , title:'재미 대박', text:'재미진 이유'},
 
-//     {id:4, region:busan, img: busanGwanganli, title:'해수욕장 대박', tet:'해수욕장이 이쁜 이유'},
-//     {id:5, region:busan, img: BusanGwangjwang, title:'시장 대박', text:'맛이 좋아요'},
-//     {id:6, region:busan, img: BusanTheBay, title:'경치 대박', text:'야경이 좋아유'},
+    {id:4, region:'busan', img: busanGwanganli, title:'해수욕장 대박', tet:'해수욕장이 이쁜 이유'},
+    {id:5, region:'busan', img: BusanGwangjwang, title:'시장 대박', text:'맛이 좋아요'},
+    {id:6, region:'busan', img: BusanTheBay, title:'경치 대박', text:'야경이 좋아유'},
 
 
-//     {id:7, region:jeju, img:jejuHanla, title:'산이 멋지다', text:'강이 멋진 이유'},
-//     {id:8, region:jeju, img:jejuJusang, title:'돌이 멋지다', text:'돌이 멋진 이유'},
-//     {id:9, region:jeju, img:JejuStone, title:'돌이 이쁘다', text:'돌이 이쁜 이유'},
+    {id:7, region:'jeju', img:jejuHanla, title:'산이 멋지다', text:'강이 멋진 이유'},
+    {id:8, region:'jeju', img:jejuJusang, title:'돌이 멋지다', text:'돌이 멋진 이유'},
+    {id:9, region:'jeju', img:JejuStone, title:'돌이 이쁘다', text:'돌이 이쁜 이유'},
 
-// ];
+];
 const regionInfo = {
     seoul: "testtesttesttesttesttesttesttesttesttesttesttest",
     jeju: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
@@ -134,8 +134,10 @@ function Header(){
                 },
             };
             onSuccess(seoulLocation);
+
             /* 투어리스트 셋팅 */
-            
+            const toursInRegion = tourList.filter(tour => tour.region === regionName);
+
             setInfoComponent(
                 <div class="backBoard">
                 <div class="region">
@@ -144,38 +146,18 @@ function Header(){
                 </div>
                 <div class="boardList">
                     <ul class="no-bullet">
-                        <li>
-                            <div class="imgLeft">
-                                <img src={logo} alt="logo"></img>
-                            </div>
-                            <div class="textRight">
-                                <span>제목이 입력되는 부분</span>
-                                <br/>
-                                <span>요약이 입력되는 부분</span>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="imgLeft">
-                                <img src={logo}></img>
-                            </div>
-                            <div class="textRight">
-                                <span>제목이 입력되는 부분</span>
-                                <br/>
-                                <span>요약이 입력되는 부분</span>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="imgLeft">
-                                <img src={logo}></img>
-                            </div>
-                            <div class="textRight">
-                                <span>제목이 입력되는 부분</span>
-                                <br/>
-                                <span>요약이 입력되는 부분</span>
-                            </div>
-                        </li>
+                        {toursInRegion.map(tour => (
+                            <li key={tour.id}>
+                                <div class="imgLeft">
+                                <img src={tour.img} alt={tour.title}/>
+                                </div>
+                                <div class="textRight">
+                                    <span>{tour.title}</span>
+                                    <br/>
+                                    <span>{tour.text}</span>
+                                </div>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
