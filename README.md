@@ -17,17 +17,17 @@
  -  소통과 공유의 장 마련: 취향, 피드, 추천을 통합한 게시판을 만들어, 사용자들이 자신의 여행 경험을 공유하고 다른 사람들의 경험에서 영감을 얻을 수 있는 소통의 장을 마련합니다. 이는 사용자들 사이의 상호작용을 증진시키고, 여행에 대한 새로운 시각과 정보를 제공할 수 있습니다.
 
  ### 팀명
-Mohaeng 
+#### Mohaeng 
 
  ### 팀원 소개
  
   |팀원이름|구현기능|역할|깃허브ID|
   |----|-----|-----|-----|
   |진윤재| 여행 취향 체크리스트 |팀장| [@Realyunjae](https://github.com/Realyunjae) |
-  |이재혁| 메인페이지   |팀원| [@ohdyo](https://github.com/ohdyo) |
-  |안효준| 메인페이지 |팀원| [ |
+  |이재혁| 메인페이지 |팀원| [@ohdyo](https://github.com/ohdyo) |
+  |안효준| 메인페이지 |팀원| [@hyojunahn111](https://github.com/hyojunahn111)|
   |박예나| 추천게시판 |팀원| [@a75372656](https://github.com/a75372656) |
-  |김나연| 피드게시판|팀원| [ |
+  |김나연| 피드게시판|팀원| [@nayeon0891](https://github.com/nayeon0891)|
 
 ## 2.채택한 개발 기술과 브랜치 전략
 
@@ -37,7 +37,7 @@
   <img src="https://img.shields.io/badge/IntelliJ-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
   <img src="https://img.shields.io/badge/IDE-java-007396?style=flat-square&logo=java&logoColor=white"/>
   <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-    <img src="https://img.shields.io/badge/MyBatis-0047AB?style=for-the-badge&logo=&logoColor=white">
+  <img src="https://img.shields.io/badge/MyBatis-0047AB?style=for-the-badge&logo=&logoColor=white">
 
  
 -  Java: 안정적이고 널리 사용되는 언어로 백엔드 개발에 적합
@@ -214,11 +214,11 @@
 ## 5. 작업 관리
 ### 역할분담
 
-#### 팀장 이재혁
+#### 팀원 이재혁
 - DB테이블 작성
 - 4,5번 보호센터 봉사활동-봉사 페이지 구현
 
-#### 팀원 오송은
+#### 팀원 안효준
 - 유저, 관리자 추가, 회원가입, 로그인 기능
 - 미아견 추가, 검색, 잃어버린 강아지 찾기 게시판 관리
 
@@ -231,7 +231,7 @@
 - 입양 게시판
 - 입양 일지 조회, 추가, 삭제기능 
 
-#### 팀원 진윤재
+#### 팀장 진윤재
 -  봉사활동 명 입력 및 인원수 체크+(중복 검색 기능)
 -  봉사활동 추가 및 삭제
 
