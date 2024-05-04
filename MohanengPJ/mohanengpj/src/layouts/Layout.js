@@ -3,6 +3,7 @@ import Front from "../components/Front"
 import { Outlet } from 'react-router-dom';
 import Recommend from "../Recommend"
 import Footer from "../pages/Footer";
+import Swiper from "../pages/Swiper";
 
 function Layout(){
     return (
@@ -10,6 +11,8 @@ function Layout(){
             <Front/>
 
             <Outlet/>
+
+            <Swiper/>
             
             <Recommend />
 
