@@ -1,7 +1,7 @@
 
 import Front from "../components/Front"
 import { Outlet } from 'react-router-dom';
-import Recommend from "../Recommend"
+import Recommend from "../pages/Recommend"
 import Footer from "../pages/Footer";
 import Swiper from "../pages/Swiper";
 

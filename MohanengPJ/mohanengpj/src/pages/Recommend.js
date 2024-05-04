@@ -1,7 +1,7 @@
 import './recommend.css'; // CSS 파일을 import하여 스타일을 적용합니다
-import noneimg1 from './img/noneimg1.png'; // 이미지를 import 합니다
-import noneimg2 from './img/noneimg2.png';
-import noneimg3 from './img/noneimg3.png';
+import noneimg1 from '../img/noneimg1.png'; // 이미지를 import 합니다
+import noneimg2 from '../img/noneimg2.png';
+import noneimg3 from '../img/noneimg3.png';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
