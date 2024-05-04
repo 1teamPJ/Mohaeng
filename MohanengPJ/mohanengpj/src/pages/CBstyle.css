@@ -33,32 +33,32 @@
     text-shadow: none;
 }
 
-/* 여행 테마 섹션 스타일링 수정 */
-div h2 {
+여행 테마 섹션 스타일링 수정
+.CBlist div h2 {
     color: #333; /* 제목 색상 */
     margin-bottom: 20px; /* 제목 아래 여백 */
     font-weight: bold; /* 제목 글자 진하게 */
 }
 
-ul {
+.CBlsit ul {
     list-style: none; /* 목록 스타일 없앰 */
     padding: 0; /* 목록 패딩 초기화 */
     
 }
 
-ul li {
+.CBlist ul li {
     display: flex; /* 항목들을 가로로 정렬 */
     justify-content: space-between; /* 항목 사이 공간 균등 분배 */
     align-items: center; /* 항목들을 세로 중앙 정렬 */
     margin-bottom: 10px; /* 항목 간 여백 */
 }
 
-input[type="checkbox"] + span {
+.CBlist input[type="checkbox"] + span {
     margin-right: auto; /* 체크박스와 텍스트 사이 여백 */
     font-weight: bold; /* 체크박스 옆의 텍스트 진하게 */
 }
 
-input[type="text"] {
+.CBlist input[type="text"] {
     padding: 8px; /* 입력 필드 내부 패딩 */
     border: 1px solid #ccc; /* 입력 필드 테두리 */
     border-radius: 4px; /* 입력 필드 모서리 둥글게 */
@@ -67,7 +67,7 @@ input[type="text"] {
     background-color: #fff; /* 입력 필드 배경 색상 */
 }
 
-button {
+.CBlist button {
     padding: 8px 15px; /* 버튼 내부 패딩 */
     background-color: darkblue; /* 버튼 배경 색상 */
     color: #fff; /* 버튼 글자 색상 */
@@ -77,17 +77,17 @@ button {
     transition: background-color 0.3s; /* 배경 색상 변경 애니메이션 */
 }
 
-button:hover {
+.CBlist button:hover {
     background-color: greenyellow; /* 버튼 호버 시 배경 색상 변경 */
 }
 
 /* 삭제 버튼만 특별히 스타일링 */
-button:last-child {
+.CBlist button:last-child {
     background-color: darkgreen ; /* 삭제 버튼 배경 색상 */
     text-align: center;
 }
 
-button:last-child:hover {
+.CBlist button:last-child:hover {
     background-color: red; /* 삭제 버튼 호버 시 배경 색상 변경 */
 }
 

@@ -152,7 +152,7 @@ function CBlist() {
     
     return (
         <>  
-            <div>     
+            <div className='CBlist'>     
                 {/* 여행 테마? */}
                 <div>
                 <h2> 1.당신이 선호하는 여행 테마는 무엇입니까?</h2>
