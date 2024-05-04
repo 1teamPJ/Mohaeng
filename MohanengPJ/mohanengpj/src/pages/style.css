@@ -1,0 +1,173 @@
+/* Header style 시작 */
+
+.textc {
+    text-align: center;
+}
+
+.textm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: rgb(227, 227, 227);
+    width: 840px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.headerword {
+    color: white;
+    font-weight: bold;
+    margin: 0 50px;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+.secondheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header.js */
+.locate {
+    /* background-color: #C4C4C4; */
+    display: inline-block;
+    padding: 10px;
+    margin-right: 100px;
+}
+
+.lc {
+    width: 200px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px 13px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.lc:focus {
+    border: 1px solid #9B51E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: 3px solid #F8E4FF;
+    border-radius: 10px;
+}
+
+.koreamap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.triplist {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    background: rgb(216, 170, 229);
+    padding: 100px 0;
+}
+
+/* backBoard.css */
+.backBoard {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(225, 234, 225, 0.686);
+    display: flex;
+    overflow-y: auto;
+    max-height: 500px;
+    flex-direction: column;
+    border-radius: 15px; /* 테두리를 둥글 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* 그림자 */
+}
+
+.no-bullet {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.no-bullet li {
+    padding: 10px; 
+    color: #fff; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.no-bullet li:last-child {
+    border-bottom: none; 
+}
+
+.no-bullet li:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    cursor: pointer; 
+}
+
+.imgLeft {
+    display: inline-block;
+}
+
+.textRight {
+    display: inline-block;
+}
+
+.region {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.weatherinfo {
+    text-align: right;
+}
+
+
+
+/* ny  footer.css*/
+.footer {
+    background-color: #F1F4ED;
+    color: #0d0c0c; 
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: center; /* 텍스트를 가운데. */
+    margin-top: 100px; /* 푸터 위에 여백 */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: center; 
+}
+
+.footer-column h3 {
+    color: #0d0c0c; 
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    text-align: center; 
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}
