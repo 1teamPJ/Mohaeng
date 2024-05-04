@@ -39,19 +39,19 @@
 
 
   ###   개발 환경
-- ### 1. 프로그래밍 언어 및 프레임워크:
-  <img src="https://img.shields.io/badge/IntelliJ-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
-  <img src="https://img.shields.io/badge/IDE-java-007396?style=flat-square&logo=java&logoColor=white"/>
-  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-  <img src="https://img.shields.io/badge/MyBatis-0047AB?style=for-the-badge&logo=&logoColor=white">
+- ###  프로그래밍 언어 및 프레임워크:
+  <img src="">
+  <img src=""/>
+  <img src="">
+  <img src="">
 
  
--  Java: 안정적이고 널리 사용되는 언어로 백엔드 개발에 적합
-- MyBatis Framework: Java와 데이터베이스 간의 상호작용을 용이하게 해주는 퍼시스턴스 프레임워크
+- React 
 
-- ### 2. 개발 도구
-  - JDK 버전: JDK 17을 사용하여 Java 애플리케이션을 개발.
-  - 빌드 도구: Gradle을 사용하여 프로젝트의 의존성 관리 및 빌드 과정을 자동화.
+- CSS/HTML (Front-end)
+- 웹 표준 준수: 웹의 기본 구조와 스타일을 정의하기 위해 HTML과 CSS를 사용함으로써, 다양한 브라우저와 장치에서의 호환성을 보장합니다.
+- 사용자 경험 향상: CSS를 통해 시각적으로 매력적인 디자인을 구현, HTML 구조를 최적화 
+
 
 ### 버전 및 이슈관리
   -  Github, Github Issues, Github Project
@@ -74,7 +74,7 @@
     <img src="https://github.com/DBTeamP/Find-Dog/assets/135615995/5e61746a-f6f2-4912-a31e-ca8b9755d8fe" alt="사진" width="30" height="30"> Google Meet
 </div>
 
-### 3. 브랜치전략
+###  브랜치전략
 - 각자 맡은 기능에따라 브랜치를 생성하여
 - 브랜치명은 feature/기능/(자기 깃허브 닉네임)
 - feature/ : 기능단위로 독립적인 개발환경을 위해 사용.
@@ -151,7 +151,7 @@
 
 
 
-#### 작업관리
+## Mohaeng팀 작업관리
 
 - GitHub issue, 학교에서 대면으로 진행상황 공유
 - 격일로 여는 짧은 회의를 통해 notion 에 회의내용을 기록함.
