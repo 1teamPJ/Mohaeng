@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../img/nologo.png';
+import {Link} from 'react-router-dom';
 /* 리스트 셋팅 */
 import seoulNamsan from '../img/seoulNamsan.jpg';
 import seoulLotteTower from '../img/seoulLotteTower.jpg';
@@ -138,6 +139,7 @@ function Header(){
             /* 투어리스트 셋팅 */
             const toursInRegion = tourList.filter(tour => tour.region === regionName);
 
+
             setInfoComponent(
                 <div class="backBoard">
                 <div class="region">
@@ -149,7 +151,9 @@ function Header(){
                         {toursInRegion.map(tour => (
                             <li key={tour.id}>
                                 <div class="imgLeft">
-                                <img src={tour.img} alt={tour.title}/>
+                                    <Link to={`/travelboard`}>
+                                        <img src={tour.img} alt={tour.title} />
+                                    </Link>
                                 </div>
                                 <div class="textRight">
                                     <span>{tour.title}</span>
