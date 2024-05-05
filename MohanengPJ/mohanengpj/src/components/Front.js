@@ -1,5 +1,5 @@
 // User 컴포넌트 코드
-import logo from '../img/nologo.png';
+import logo from '../img/mohaenglogo.png';
 import { NavLink } from 'react-router-dom';
 import styles from './Front.module.css'; // CSS 모듈을 import하여 styles 객체로 사용합니다
 
