@@ -39,7 +39,7 @@ function CBFooter({
                 ))}
             </ul>
 
-            <h3>당신 취향 준비물</h3>
+            <h3>당신의 준비물</h3>
             <ul>
                 {selectedTripItems.map(item => (
                     <li key={item.id}>{item.name}</li>

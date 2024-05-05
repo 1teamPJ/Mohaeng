@@ -176,7 +176,7 @@ function CBlist() {
                 
                     {/* 여행 누구랑 */}
                 <div>
-                <h2>2. 이번 여행, 당신은 누구랑 함꼐하고 싶으세요?</h2>
+                <h2>2. 이번 여행, 당신은 누구랑 함께하고 싶으세요?</h2>
                 </div>
                 <ul>
                     {Partners.map(Partner => (
@@ -228,7 +228,7 @@ function CBlist() {
                     </li>
                      ))}
                 </ul>
-                <input type="text" value={newDuration} onChange={(e) => setNewDuration(e.target.value)} placeholder="준비물 챙겨!!" />
+                <input type="text" value={newDuration} onChange={(e) => setNewDuration(e.target.value)} placeholder="원하는 여행 기간 입력" />
                 <button onClick={addDuration}>추가</button>
 
                 {/* 여행 준비물 */}
