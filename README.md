@@ -111,7 +111,71 @@
      
 ## 5. 프로젝트 구조
   ```
- 
+ ├── App.js
+├── components
+│   ├── Front.js
+│   └── Front.module.css
+├── css
+│   ├── feedstyle.css
+│   └── travelstyle.css
+├── img
+│   ├── BusanGwangjwang.jpg
+│   ├── BusanTheBay.jpg
+│   ├── JejuStone.jpg
+│   ├── busan.jpg
+│   ├── busanGwanganli.jpg
+│   ├── chuncheon.jpg
+│   ├── gangneung.jpg
+│   ├── gyeongju.jpg
+│   ├── houseimg
+│   │   ├── house1.webp
+│   │   ├── house2.webp
+│   │   ├── house3.webp
+│   │   ├── house4.webp
+│   │   └── house5.webp
+│   ├── incheon.jpg
+│   ├── jeju.jpg
+│   ├── jejuHanla.jpg
+│   ├── jejuJusang.jpg
+│   ├── jeonju.jpg
+│   ├── krmap.png
+│   ├── krmap.svg
+│   ├── krmap2.svg
+│   ├── mainlogo1.png
+│   ├── mainlogo2.png
+│   ├── mainlogo3.png
+│   ├── mainlogo4.png
+│   ├── mainlogo5.png
+│   ├── mainlogo6.png
+│   ├── mohaenglogo.png
+│   ├── nologo.png
+│   ├── noneimg1.png
+│   ├── noneimg2.png
+│   ├── noneimg3.png
+│   ├── seoul.jpg
+│   ├── seoulLotteTower.jpg
+│   ├── seoulLotteworld.jpg
+│   ├── seoulNamsan.jpg
+│   └── yeosu.jpg
+├── index.js
+├── layouts
+│   ├── CbLayout.js
+│   └── Layout.js
+└── pages
+    ├── CBfooter.js
+    ├── CBheader.js
+    ├── CBlist.js
+    ├── CBstyle.css
+    ├── FeedBoard.js
+    ├── Footer.js
+    ├── Header.js
+    ├── Recommend.js
+    ├── Swiper.js
+    ├── TravelRecommandations.js
+    ├── recommend.css
+    └── style.css
+
+
  
  ```
 
@@ -170,6 +234,10 @@
 ### 이재혁
 - 이번엔 다른 프로젝트에 비해 역할을 덜 받아서 좀 더 개념을 잡고 활용하는 방식으로 프로젝트기간 동안 수행할수 있던것 같습니다. 저번 프로젝트 이후 강사님의 피드백을 듣고 이번 프로젝트에선 프로젝트를 통한 수익창출에 목적을 두고 아이디어를 구성했으며
   그에 따른 시장 조사 및 비슷한 프로젝트를 찾아서 확인해보며 우리가 지금 할수 있는 특별한 방법이 뭔지 생각하면서 프로젝트 기능을 구현했습니다. 아직은 시중에 있는 어플이나 웹페이지 보단 기능이나 여러 면에서 떨어지는 것이 보이지만 이렇게 다운그레이드 된 웹페이지를 만드는 경험을 배우는 좋은 프로젝트였다고 생각합니다.
+
+- 자바, 데이터베이스와 다르게 React를 기반으로 HTML/CSS, java를 사용해서 개발하는 것은 이번이 처음이였는데 이해하는게 너무 어려웠다. 사실 이해했는지도 잘 모르겠다. 주위 친구들 중에 개발하는 친구들을 보면 React를 사용해서 개발하는 모습을 많이 봐왔는데 이렇게 헛갈릴지 몰랐다. 많은 공부가 더 필요한 것 같고 더 많은 프로젝트를 React로 개발해봄으로써 지식을 쌓아가야할 것 같다.
+### 김나연
+- 이번 프로젝트를 통해 리액트를 활용하여 직접 페이지를 만들어보면서, 수업에서 부족했던 부분을 확실히 보충할 수 있어서  만족스러웠습니다. 특히, 팀원들과의 유쾌하고 활발한 소통 덕분에 프로젝트 진행 중에 발생한 어려움도 재미있는 과정으로 여겨질 수 있었습니다.  정기적인 회의와 실시간 협업툴을 통해 의견을 나누고, 함께 문제를 해결하면서 더 나은 결과물을 만들어 낸 거 같습니다. 
 
 
 
