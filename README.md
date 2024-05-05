@@ -111,7 +111,71 @@
      
 ## 5. 프로젝트 구조
   ```
- 
+ ├── App.js
+├── components
+│   ├── Front.js
+│   └── Front.module.css
+├── css
+│   ├── feedstyle.css
+│   └── travelstyle.css
+├── img
+│   ├── BusanGwangjwang.jpg
+│   ├── BusanTheBay.jpg
+│   ├── JejuStone.jpg
+│   ├── busan.jpg
+│   ├── busanGwanganli.jpg
+│   ├── chuncheon.jpg
+│   ├── gangneung.jpg
+│   ├── gyeongju.jpg
+│   ├── houseimg
+│   │   ├── house1.webp
+│   │   ├── house2.webp
+│   │   ├── house3.webp
+│   │   ├── house4.webp
+│   │   └── house5.webp
+│   ├── incheon.jpg
+│   ├── jeju.jpg
+│   ├── jejuHanla.jpg
+│   ├── jejuJusang.jpg
+│   ├── jeonju.jpg
+│   ├── krmap.png
+│   ├── krmap.svg
+│   ├── krmap2.svg
+│   ├── mainlogo1.png
+│   ├── mainlogo2.png
+│   ├── mainlogo3.png
+│   ├── mainlogo4.png
+│   ├── mainlogo5.png
+│   ├── mainlogo6.png
+│   ├── mohaenglogo.png
+│   ├── nologo.png
+│   ├── noneimg1.png
+│   ├── noneimg2.png
+│   ├── noneimg3.png
+│   ├── seoul.jpg
+│   ├── seoulLotteTower.jpg
+│   ├── seoulLotteworld.jpg
+│   ├── seoulNamsan.jpg
+│   └── yeosu.jpg
+├── index.js
+├── layouts
+│   ├── CbLayout.js
+│   └── Layout.js
+└── pages
+    ├── CBfooter.js
+    ├── CBheader.js
+    ├── CBlist.js
+    ├── CBstyle.css
+    ├── FeedBoard.js
+    ├── Footer.js
+    ├── Header.js
+    ├── Recommend.js
+    ├── Swiper.js
+    ├── TravelRecommandations.js
+    ├── recommend.css
+    └── style.css
+
+
  
  ```
 
@@ -165,7 +229,8 @@
 ### 진윤재
 - 이번 프로젝트에서 팀장 역할을 맡으면서, 팀원들과의 의사소통 방식에 대해 깊이 이해할 수 있는 소중한 기회를 가졌다. 개발자가 아닌 사용자의 관점에서 실제로 필요한 기능이 무엇일지 고민하며, 시장에 존재하는 다른 앱들과 차별화된 게시판을 만들기 위해 끊임없이 노력했고 이 과정에서 사용자 중심의 개발의 중요성을 직접 체험하며, 차별화된 기능을 갖춘 게시판을 성공적으로 개발할 수 있었다. 이 프로젝트를 통해 얻은 큰 만족감과 보람은 프로젝트를 성공으로 이끈 중요한 요소였다.
 ### 안효준
-- **자바, 데이터베이스와 다르게 React를 기반으로 HTML/CSS, java를 사용해서 개발하는 것은 이번이 처음이였는데 이해하는게 너무 어려웠다. 사실 이해했는지도 잘 모르겠다. 주위 친구들 중에 개발하는 친구들을 보면 React를 사용해서 개발하는 모습을 많이 봐왔는데 이렇게 헛갈릴지 몰랐다. 많은 공부가 더 필요한 것 같고 더 많은 프로젝트를 React로 개발해봄으로써 지식을 쌓아가야할 것 같다.
-
+- 자바, 데이터베이스와 다르게 React를 기반으로 HTML/CSS, java를 사용해서 개발하는 것은 이번이 처음이였는데 이해하는게 너무 어려웠다. 사실 이해했는지도 잘 모르겠다. 주위 친구들 중에 개발하는 친구들을 보면 React를 사용해서 개발하는 모습을 많이 봐왔는데 이렇게 헛갈릴지 몰랐다. 많은 공부가 더 필요한 것 같고 더 많은 프로젝트를 React로 개발해봄으로써 지식을 쌓아가야할 것 같다.
+### 김나연
+- 이번 프로젝트를 통해 리액트를 활용하여 직접 페이지를 만들어보면서, 수업에서 부족했던 부분을 확실히 보충할 수 있어서  만족스러웠습니다. 특히, 팀원들과의 유쾌하고 활발한 소통 덕분에 프로젝트 진행 중에 발생한 어려움도 재미있는 과정으로 여겨질 수 있었습니다.  정기적인 회의와 실시간 협업툴을 통해 의견을 나누고, 함께 문제를 해결하면서 더 나은 결과물을 만들어 낸 거 같습니다. 
 
 
